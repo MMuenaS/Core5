@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Perfil</title>
+
+    <link rel="stylesheet" href="/Core5/css/styles-pag-perfil.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=settings">
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1><a href="#">Perfil</a></h1>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Mi Perfil</a></li>
+            <li><a href="#">Encontrar Conexiones</a></li>
+        </ul>
+
+        <button class="logout"><strong>Cerrar Sesión</strong></button>
+    </nav>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <main class="container">
+
+        <!-- COLUMNA IZQUIERDA -->
+        <div class="izquierda">
+
+            <!-- TARJETA DE PERFIL -->
+            <div class="tarjeta-perfil">
+
+                <div class="fila1"></div>
+                <div class="foto">
+                    <img src="/Core5/media/yoyo.png" alt="Foto de perfil">
+                </div>
+
+                <div class="fila2">
+
+                    <!-- BLOQUE 1 -->
+                    <div class="bloque-identidad">
+                        <h2>Macarena Muena</h2>
+                        <p>Molina, Chile</p>
+                    </div>
+
+                    <!-- BLOQUE 2 -->
+                    <div class="bloque-profesion">
+                        <p><strong>Docente de Matemáticas y Física</strong></p>
+                        <p><strong>Científica de Datos</strong></p>
+                    </div>
+
+                    <!-- BLOQUE 3 -->
+                    <div class="bloque-hobbies">
+                        <p>Apasionada por el Desarrollo Web y Aplicaciones de Dispositivos</p>
+                        <p>Amante de los animales y la naturaleza</p>
+                        <p>Disfruto aprendiendo nuevas habilidades técnicas, como lenguajes de programación.</p>
+                        <!-- tuerca editar perfil -->
+                        <a href="#" class="editar-perfil">
+                            <span class="material-symbols-outlined">settings</span>
+                            Edit profile
+                        </a>
+                    </div>
+
+                </div> 
+
+            </div> 
+
+            <!-- EDUCACIÓN -->
+            <div class="educacion">
+                <h3>Educación</h3>
+                <p><strong>Universidad Autónoma de Chile</strong> | Pedagogía en Matemática y Física</p>
+                <p><strong>Universidad de Chile</strong> | Diplomado en Ciencia de Datos</p>
+            </div>
+
+        </div> 
+
+        <!-- COLUMNA DERECHA -->
+        <div class="derecha">
+
+            <!-- SOLICITUDES -->
+            <div class="tarjeta-solicitud">
+                <h3>Solicitudes de Conexión (2)</h3>
+
+                <div class="solicitudes">
+                    <div class="info-usuario">
+                        <img src="/Core5/media/Leonardo.png" class="imagen" alt="Foto de Leonardo">
+                        <span><strong>Leonardo Zapata</strong></span>
+                    </div>
+                    <div class="iconos">
+                        <button class="aceptar">✔</button>
+                        <button class="rechazar">✖</button>
+                    </div>
+                </div>
+
+                <div class="solicitudes">
+                    <div class="info-usuario">
+                        <img src="/Core5/media/Margarita.png" class="imagen" alt="Foto de Margarita">
+                        <span><strong>Margarita Sánchez</strong></span>
+                    </div>
+                    <div class="iconos">
+                        <button class="aceptar">✔</button>
+                        <button class="rechazar">✖</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONEXIONES -->
+            <div class="tarjeta-conexion">
+                <h3>Tus Conexiones (500+)</h3>
+
+                <ul class="lista-conexiones">
+                    <li><img src="/Core5/media/Paulo.png" class="imagen" alt="Foto de Paulo"><strong>Paulo Valdés</strong></li>
+                    <li><img src="/Core5/media/Matias.png" class="imagen" alt="Foto de Matías"><strong>Matías Ayala</strong></li>
+                    <li><img src="/Core5/media/Angela.png" class="imagen" alt="Foto de Angela"><strong>Angela Castro</strong></li>
+                    <li><img src="/Core5/media/Amanda.png" class="imagen" alt="Foto de Amanda"><strong>Amanda Ayala</strong></li>
+                    <li><img src="/Core5/media/Jorge.png" class="imagen" alt="Foto de Jorge"><strong>Jorge Valdés</strong></li>
+                    <li><img src="/Core5/media/Maria.png" class="imagen" alt="Foto de María"><strong>María Silva</strong></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

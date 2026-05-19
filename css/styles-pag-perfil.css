@@ -1,0 +1,228 @@
+/* RESET GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    background-color: #f2f2f2;
+    font-family:'Courier New', Courier, monospace
+}
+/*-------------------------------------*/
+/* NAVBAR */
+.navbar {
+    background-color: black;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logo a {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none; /*enlaces sin subrayado*/
+}
+
+.nav-links {
+    margin-left: auto;
+    display: flex;
+    gap: 25px; /*espacio horizontal entre columnas*/ 
+    list-style: none;/*quita las viñetas de las listas*/
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.logout {
+    background-color:aqua;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;/*al pasar el cursor por encima muestra una mano*/
+    margin-left: 20px;
+}
+/*----------------------------------------------*/
+/* CONTENEDOR PRINCIPAL */
+.container {
+    display: flex;
+    width: 100%; /*ancho completo de la página*/
+    gap: 50px;
+    padding: 30px;
+}
+
+/* COLUMNAS (Espacio que ocupa la columna izquierda dentro de la pantalla de forma horizontal) */
+.izquierda {
+    width: 65%;
+}
+/*espacio que ocupa la columna derecha */
+.derecha {
+    width: 35%;
+}
+
+/*-----------------------------------*/
+/* TARJETA DE PERFIL */
+
+.tarjeta-perfil {
+    position: relative;
+    width: 100%;
+    min-height: 520px;
+    background: white;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);/*sombra abajo*/
+    overflow: hidden;/*oculta contenido que se sale del contenedor*/
+}
+
+/* Fila superior */
+.fila1 {
+    height: 140px;
+    background-color: rgb(167, 246, 246);
+}
+
+/* Foto */
+.foto {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.foto img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 6px;
+    background: conic-gradient(#ff7b7b, #ffd36b, #6bd6ff, #ff7b7b);
+    background-clip: padding-box;/*el fondo se pinta solo en el area del padding*/
+}
+
+/* Contenido de mi identidad */
+.fila2 {
+    padding: 120px 30px 30px;
+    text-align: left;
+}
+
+/* Bloques generales */
+.bloque-identidad,
+.bloque-profesion,
+.bloque-hobbies {
+    margin-bottom: 20px;
+}
+
+/* Títulos dentro de identidad*/
+.bloque-identidad h2 {
+    margin: 0;
+}
+
+/* Párrafos generales */
+.bloque-profesion p {
+    font-weight: bold;
+}
+
+.bloque-profesion p,
+.bloque-hobbies p {
+    margin-bottom: 8px;
+}
+
+/* Botón editar perfil */
+.editar-perfil {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.editar-perfil .material-symbols-outlined {
+    font-size: 20px;
+}
+
+/*-------------------------------------------*/
+/* EDUCACIÓN */
+
+.educacion {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.educacion p {
+    margin-top: 8px;
+}
+
+/* ------------------------------------------------ */
+/* SOLICITUDES */
+
+.tarjeta-solicitud {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.solicitudes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.info-usuario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.imagen {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.iconos button {
+    border: 2px solid #ff4fa3;
+    color: #ff4fa3;
+    background-color: white;
+    border-radius: 50%;
+    padding: 6px 10px;
+    cursor:pointer;
+}
+
+/* -------------------------------------- */
+/* CONEXIONES */
+
+.tarjeta-conexion {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.lista-conexiones {
+    margin-top: 10px;
+}
+
+.lista-conexiones li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+}
